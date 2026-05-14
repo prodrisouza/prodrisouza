@@ -63,22 +63,16 @@ Já atuei em **Globo, Itaú, Petlove, Claro, Drogaria Araújo, BASA, FMC** e out
 
 | Projeto | Stack | O que foi feito |
 |--------|-------|-----------------|
-| **Globo — Migração AMAP → OnCore** | BigQuery, SQL, Salesforce | Reescrita de views SQL para migração de CRM sem interrupção dos painéis comerciais no cutover. Objeto de Rateio virou hierarquia de 4 objetos — granularidade mensal gerada via SQL |
-| **Globo — Mergulho Setorial** | BigQuery, Power BI | Otimização de dashboard com 21M de linhas. Criação de tabela agregada intermediária que eliminou timeout no Power BI e reduziu custo de scan |
-| **RPE/CobranSaas — Pipeline Medallion** | Databricks, PySpark, Delta Lake | Pipeline Bronze/Silver/Gold do zero para 3 emissores (Martminas, Flamcard, Cartão Nalin). Resolução de OOM com batch processing. Credenciais isoladas por emissor via Secret Scope |
-| **BASA — Data Quality** | Python, OpenMetadata, AWS | Automação de criação de test cases via API REST do OpenMetadata com Pandas. Processo de dias virou minutos |
-| **Itaú — Credcobrança** | Databricks, Oracle Cloud, PySpark | Pipelines críticos de cobrança com Oracle PL/SQL, ODI e analytics. SQL avançado com CTEs e window functions em alto volume |
-| **Drogaria Araújo — CDP** | FastAPI, Salesforce, Docker, K8s, Azure DevOps | Customer Data Platform integrando Service Cloud e Marketing Cloud. CI/CD com Azure Pipelines, containerização com Docker e Kubernetes |
-| **Claro/Accenture — Billing Analytics** | Oracle SQL, PL/SQL | Scripts de faturamento mobile com CTEs complexas, análise de variação entre ciclos e resolução de ORA-01722 em conversão numérica |
+| **Migração AMAP → OnCore** | BigQuery, SQL, Salesforce | Reescrita de views SQL para migração de CRM sem interrupção dos painéis comerciais no cutover. Objeto de Rateio virou hierarquia de 4 objetos — granularidade mensal gerada via SQL |
+| **Mergulho Setorial** | BigQuery, Power BI | Otimização de dashboard com 21M de linhas. Criação de tabela agregada intermediária que eliminou timeout no Power BI e reduziu custo de scan |
+| **Pipeline Medallion** | Databricks, PySpark, Delta Lake | Pipeline Bronze/Silver/Gold do zero para emissores. Resolução de OOM com batch processing. Credenciais isoladas por emissor via Secret Scope |
+| **Data Quality** | Python, OpenMetadata, AWS | Automação de criação de test cases via API REST do OpenMetadata com Pandas. Processo de dias virou minutos |
+| **Credcobrança** | Databricks, Oracle Cloud, PySpark | Pipelines críticos de cobrança com Oracle PL/SQL, ODI e analytics. SQL avançado com CTEs e window functions em alto volume |
+| **CDP** | FastAPI, Salesforce, Docker, K8s, Azure DevOps | Customer Data Platform integrando Service Cloud e Marketing Cloud. CI/CD com Azure Pipelines, containerização com Docker e Kubernetes |
+| **Billing Analytics** | Oracle SQL, PL/SQL | Scripts de faturamento mobile com CTEs complexas, análise de variação entre ciclos e resolução de ORA-01722 em conversão numérica |
 | **FMC/Terra Brasil — DW Agrícola** | Power BI, DAX, SQL Server | Data Warehouse com tabelas fato e dimensão. Dashboards de POG histórico por safra com lógica YTD/YTG em DAX |
 | **Catupiry — Loja Perfeita** | Power BI, DAX, PostgreSQL | Sistema de scoring de execução PDV com dashboards de Loja Perfeita, Ruptura e Visão do Colaborador. Dezenas de medidas DAX por pilar |
-| **Petlove — Data Platform** | AWS, Airflow, DBT, Redshift | Pipelines Bronze/Silver/Gold integrando CRM interno Bulldog. Modelagem dimensional com Star Schema e entrega para analytics via Redshift |
-
----
-
-## Certificações
-
-![PL-300](https://img.shields.io/badge/Microsoft_PL--300-Power_BI_Data_Analyst-F2C811?style=flat-square&logo=microsoftpowerbi&logoColor=black)
+| **Data Platform** | AWS, Airflow, DBT, Redshift | Pipelines Bronze/Silver/Gold integrando CRM interno Bulldog. Modelagem dimensional com Star Schema e entrega para analytics via Redshift |
 
 ---
 
